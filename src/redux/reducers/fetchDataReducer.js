@@ -2,7 +2,7 @@ import { types } from '../types';
 
 const initialState = {
     loading: false,
-    user: {},
+    user: "",
     error: {}
 }
 

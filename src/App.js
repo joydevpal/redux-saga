@@ -9,19 +9,22 @@ export class App extends Component {
     this.state = {
 
     }
-    this.fetchData = this.fetchData.bind(this);
+    this.handleFetchData = this.handleFetchData.bind(this);
   }
 
-  fetchData() {
+  handleFetchData() {
     this.props.fetchData(2)
   }
   render() {
     return (
       <div>
         <button
-          onClick={this.fetchData}
+          onClick={this.handleFetchData}
           className="btn btn-primary"
         >Fetch</button>
+        <div>
+          {this.props.user}
+        </div>
       </div>
     )
   }
